@@ -1,0 +1,96 @@
+
+/*overall*/
+* {
+    box-sizing: border-box;
+}
+
+background{background-color: whitesmoke}
+
+/*body*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/*header*/
+.header {
+    padding: 3px;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: x-large;
+}
+
+/* navigation */
+.nav {
+    display: flex;
+    background-color: #333333;
+}
+
+.nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.nav a:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
+/* flexbox*/
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    flex: 30%;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+
+.right {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.full{
+    flex: 100%;
+    background-color: whitesmoke;
+}
+
+/*img */
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*tables*/
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+td, th {
+    text-align: left;
+    padding: 5px;
+}
+
+
+
+
+/*mobile sizing*/
+@media screen and (max-width: 750px) {
+    .main, .nav {
+        flex-direction: column;
+    }
+}
