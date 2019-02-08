@@ -4,7 +4,7 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 150px);
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "main main main main";
 }
 
@@ -49,7 +49,7 @@
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas: "main main main main";
     }
 }
