@@ -12,7 +12,9 @@ $(document).ready(function(){
     });
     $(".eq").click(function(event) {
         try {
-            expression = eval(expression);
+            if(expression!==""){
+                expression = eval(expression);
+            }
         }catch(e){
             if(e instanceof SyntaxError){
                 alert("Invalid Syntax")
