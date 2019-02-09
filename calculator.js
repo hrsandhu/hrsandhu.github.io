@@ -16,7 +16,7 @@ $(document).ready(function(){
                 expression = eval(expression);
             }
         }catch(e){
-            if(e instanceof SyntaxError){
+            if(e){
                 alert("Invalid Syntax")
                 expression=""
             }
