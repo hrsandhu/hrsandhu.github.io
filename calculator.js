@@ -16,10 +16,8 @@ $(document).ready(function(){
                 expression = eval(expression);
             }
         }catch(e){
-            if(e){
-                alert("Invalid Syntax")
-                expression=""
-            }
+            alert("Invalid Syntax");
+            expression="";   
         }
         document.getElementById("display").innerText = expression;
         answer=expression;
